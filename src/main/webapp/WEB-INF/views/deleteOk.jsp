@@ -9,7 +9,9 @@
 <body>
 	<h2>회원탈퇴 확인</h2>
 	<hr>
-	${message }
+	${message }<br><br>
+	<input type="button" value="메인화면으로" onclick="javascript:window.location.href='' "> 
+	
 	
 </body>
 </html>
