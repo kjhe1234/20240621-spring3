@@ -13,6 +13,7 @@ import com.kjhe1234.command.MCommand;
 import com.kjhe1234.command.MDeleteCommand;
 import com.kjhe1234.command.MJoinCommand;
 import com.kjhe1234.command.MListCommand;
+import com.kjhe1234.command.MModifyCommand;
 import com.kjhe1234.command.MSearchCommand;
 
 @Controller
@@ -134,5 +135,28 @@ public class JdbcController {
 		
 		return "list";
 	}
+	
+	@RequestMapping(value = "/modifyOk")
+	public String modifyOk(HttpServletRequest request, Model model) {
+		
+		model.addAttribute("request", request);
+		
+		command = new MModifyCommand();
+		int success = command.execute(model);		
+		
+		if(success == 1) {  // 정보 수정 성공
+			
+			command = new MSearchCommand();
+			command.execute(model);
+			
+			return "modifyOk";
+		} else {  // 정보수정 실패 -> 다시 회원 아이디 조회화면으로 이동
+			return "search";
+		}
+		
+		
+	}
+	
+	
 	
 }
