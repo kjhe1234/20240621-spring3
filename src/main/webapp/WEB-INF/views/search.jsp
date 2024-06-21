@@ -11,7 +11,8 @@
 	<hr>
 	<form action="searchOk">
 		회원아이디 : <input type="text" name="mid">
-		<input type="submit" value="회원조회">
+		<input type="submit" value="회원조회"><br><br>
+		<input type="button" value="메인화면으로" onclick="javascript:window.location.href='' "> 
 	</form>
 </body>
 </html>

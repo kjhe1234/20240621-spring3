@@ -15,7 +15,7 @@
 		이름 : <input type="text" name="mname"><br><br>
 		이메일 : <input type="text" name="memail"><br><br>
 		<input type="submit" value="회원등록">
-		
+		<input type="button" value="메인화면으로" onclick="javascript:window.location.href='' "> 
 	</form>
 	<br>
 	<h3>${error }</h3>
