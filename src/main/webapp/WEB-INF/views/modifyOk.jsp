@@ -13,6 +13,8 @@
 	이름 : ${memberDto.mname }<br><br>
 	이메일 : ${memberDto.memail }<br><br>
 	가입일: ${memberDto.mdate }<br><br>
+	
+	
 
 </body>
 </html>

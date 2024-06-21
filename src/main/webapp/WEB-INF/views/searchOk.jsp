@@ -16,7 +16,10 @@
 	이메일 : <input type="text" name="memail" value="${memberDto.memail }"><br><br>
 	가입일 : ${memberDto.mdate }<br><br>
 	<input type="submit" value="수정완료">
+	<input type="button" value="회원 탈퇴" onclick="javascript:window.location.href='deleteOk?mid=${memberDto.mid }' ">
+	<input type="button" value="이전페이지로 가기" onclick="javascript:history.go(-1)">
 	</form>
+
 	${error }
 	
 </body>

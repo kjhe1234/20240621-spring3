@@ -29,5 +29,6 @@
 		</tr>
 		</c:forEach>
 	</table>
+	<input type="button" value="메인화면으로" onclick="javascript:window.location.href='' "> 
 </body>
 </html>
